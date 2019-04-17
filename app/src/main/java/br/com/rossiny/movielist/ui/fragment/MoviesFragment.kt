@@ -207,10 +207,14 @@ class MoviesFragment : Fragment(), AdapterCallback {
 
     private fun getLocalMovies(): List<Movie> {
         val preferencesHelper = context?.let { PreferencesHelper(it) }
-        val list = Gson().fromJson<List<Movie>>(
-            preferencesHelper?.results,
-            object : TypeToken<List<Movie>>() {}.type
-        )
+        var list : List<Movie> = emptyList()
+        preferencesHelper?.results?.let {
+            if (it.isNotEmpty()) {
+                list = Gson().fromJson<List<Movie>>(it,
+                    object : TypeToken<List<Movie>>() {}.type
+                )
+            }
+        }
         Log.d(TAG, "Movie count: " + list.size)
         return list
     }
