@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@android:color/black"
+             android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            app:cardCornerRadius="0dp"
+            app:cardPreventCornerOverlap="false">
+
+        <ProgressBar
+                android:id="@+id/movie_progress"
+                style="@style/Widget.AppCompat.ProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+        <ImageView
+                android:id="@+id/content_poster"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/black"
+                android:contentDescription="@string/image_of_the_content"
+                android:scaleType="fitCenter"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/colorPrimaryTransparent"
+                android:padding="4dp">
+
+            <TextView
+                    android:id="@+id/content_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    tools:text="Movie Title"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">MovieList</string>
+    <string name="error_msg">Sorry! Couldn\'t fetch movies.</string>
+    <string name="btn_retry">Retry</string>
+    <string name="error_msg_no_internet">Not connected to internet</string>
+    <string name="error_msg_timeout">The server took too long to respond</string>
+    <string name="error_msg_unknown">An unexpected error occurred</string>
+    <string name="tap_to_reload">Tap to reload</string>
+    <string name="image_of_the_content">Image of the content</string>
+    <string name="name_">%s</string>
+    <string name="channels_">%d</string>
+    <string name="viewers_">%d</string>
+    <string name="name">Name</string>
+    <string name="channels">Channels</string>
+    <string name="viewers">Viewers</string>
+    <string name="title">Title</string>
+    <string name="overview">Overview</string>
+    <string name="vote_average">Vote average</string>
+    <string name="title_year">"%s\n%s"</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="genres">Genres</string>
+    <string name="like">Like</string>
+    <string name="search">Search</string>
+</resources>
