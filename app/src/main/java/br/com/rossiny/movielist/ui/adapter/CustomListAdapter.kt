@@ -141,6 +141,7 @@ open class CustomListAdapter internal constructor(private val context: Context) 
         for (result in results) {
             add(result)
         }
+        notifyDataSetChanged()
     }
 
     fun remove(r: Movie?) {
@@ -189,6 +190,11 @@ open class CustomListAdapter internal constructor(private val context: Context) 
         notifyItemChanged(movies.size - 1)
 
         if (errorMsg != null) this.errorMsg = errorMsg
+    }
+
+    fun setList(localMovies: List<Movie>) {
+        movies = localMovies as MutableList<Movie>
+        notifyDataSetChanged()
     }
 
 
